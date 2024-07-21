@@ -43,7 +43,7 @@ export const updateListing = async (req, res, next) => {
             req.body,
             { new: true }
         );
-        req.status(200).json(updateListing);
+        res.status(200).json(updateListing);
     } catch (error) {
         next(error);
     }
